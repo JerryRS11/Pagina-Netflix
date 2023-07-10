@@ -1,0 +1,489 @@
+/*Esto es un comentario en CSS*/
+
+/*GENERAL*/
+
+/*Aplicar estilo general para la página web*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+*{
+   margin: 0px;
+   padding: 0px;
+   color: #ffffff;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+}
+
+/*Aplicar estilo a titulo 1*/
+   /*tamaño de letra (rem)*/
+   /*La propiedad font-weight muestra el grosor de las letras*/
+h1{
+   font-size: 4rem;
+   font-weight: 700;
+}
+
+/*Aplicar estilo a titulo 1*/
+   /*tamaño de letra (rem)*/
+h2{
+   font-size: 1.625rem;
+}
+
+/*Aplicar estilo a titulo 3*/
+   /*tamaño de letra (rem)*/
+h3{
+   font-size: 1rem;
+}
+   
+/*Aplicar estilo a todas las secciones de la página web*/
+   /*La propiedad padding aplica relleno a un elemento*/
+section{
+   background: #000000;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   border-bottom: 8px solid #222;
+}
+
+/*Apliar estilo a todas las secciones cuyo bloque (div) se llame contenido*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+section div.contenido{
+   width: 1100px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*Aplicar estilo al bloque (div) restaurar*/
+   /*Clear:both se usa para restaurar el contenido del elemento*/
+.restaurar{
+   clear:both;
+}
+
+/*FONDO*/
+
+/*CABECERA*/
+
+/*Aplicar estilo a contenido de html,body y cover*/
+html,body,.cover{
+   height: 100%;
+}
+/*Aplicar estilo a clase cover*/
+.cover{
+   background:url(../img/fondo.jpg);
+}
+
+/*Aplicar estilo a clase cabecera*/
+   /*La propiedad position define el tipo de posicionamiento para colocar un 
+   elemento*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+   /*La propiedad bottom especifica la distancia entre el margen inferior del
+   elemento y el margen inferior de su contenedor*/
+section.cabecera{
+   background: none;
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   right:0px;
+   bottom: 0px;
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%,
+ rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/*Aplicar estilo a etiqueta de navegación*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+nav{
+/*margin:cantidad de margen | tamaño de letra (rem)*/
+   margin:0px 3.5rem;
+   padding-top: 26px;
+}
+
+/*Aplicar estilo a clase logo*/
+   /*La propiedad float permite a un elemento flotar hacia un lado u otro y 
+   ocupar el espacio disponible*/
+   /*Float:left hace que el elemento flote a la izquierda*/
+div.logo{
+   float: left;
+}
+
+/*Aplicar estilo a clase login*/
+   /*La propiedad float permite a un elemento flotar hacia un lado u otro y 
+   ocupar el espacio disponible*/
+   /*Float:right hace que el elemento flote a la derecha*/
+div.login{
+   float: right;
+}
+
+/*Aplicar estilo a clase span del login*/
+   /*La propiedad padding aplica relleno a un elemento*/
+div.login span{
+   padding: 7px 17px;
+   background:#e50914;
+   border-radius: 4px;
+   font-weight: bold;
+   text-align: center;
+}
+
+/*Aplicar estilo a clase login al pasar encima*/
+div.login span:hover{
+   background-color: #02faee;
+   color:#0c4a31;
+   font-weight: bold;
+   cursor:pointer;
+}
+
+/*PRESENTACIÓN*/
+
+/*Aplicar estio a clase presentación*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.presentacion{
+   text-align: center;
+   height: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*FORMULARIO*/
+.form-content h2{
+   color:black;
+   font-size: 25px;
+   margin-bottom: 30px;
+   font-weight: bold;
+   align-items: center;
+}
+form{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+input,textarea{
+   padding: 17px 14px;
+   background-color: #ffffff;
+   border: 0;
+   font-size: 17px;
+   color: #424949;
+   margin-left: 15px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   height: 20px;
+   width: 73%;
+   font-weight: bold;
+   text-align: center;
+}
+::placeholder{
+   color:#AAB7B8;
+   font-weight: bold;
+}
+.form-content form{
+   display: flex;
+   flex-direction:row;
+   width: 800px;
+   align-items:left;
+}
+.btn{
+   padding: 17px 14px;
+   background-color: #e50914;
+   border: 0;
+   font-size: 17px;
+   color: #ffffff;
+   margin-left: 15px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   height: auto;
+   width:150px;
+   cursor: pointer;
+   align-self: flex-end;
+   font-weight: bold;
+}
+.btn:hover{
+   background-color: #02faee;
+   color:#0c4a31;
+   font-weight: bold;
+}
+
+/*TV*/
+
+/*Aplicar estilo a clase izquierda*/
+   /*La propiedad float permite a un elemento flotar hacia un lado u otro y 
+   ocupar el espacio disponible*/
+   /*Float:left hace que el elemento flote a la izquierda*/
+.izquierda{
+   float: left;
+}
+
+/*Aplicar estilo a clase derecha*/
+   /*La propiedad float permite a un elemento flotar hacia un lado u otro y 
+   ocupar el espacio disponible*/
+   /*Float:right hace que el elemento flote a la derecha*/
+.derecha{
+   float: right;
+}
+
+/*Aplicar estilo a clase flotanteTexto*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.flotanteTexto{
+   width: 59%;
+}
+
+/*Aplicar estilo a clase flotanteImagen*/
+.flotanteImagen{
+   width: 39%;
+}
+
+/*Aplicar estilo a imagenes que esten dentro de la clase contenido */
+  /*La posición relativa hace que se puedan modificar las propiedades del elemento*/
+  /*La propiedad z-index define un indice que determina la posición del elemento
+  en el eje z*/
+.contenido img{
+   width: 100%;
+   height: auto;
+   border: 0;
+   position: relative;
+   z-index: 2;
+}
+
+/*Aplicar estilo a titulos de la clase contenido*/
+.contenido h2{
+   font-weight: bold;
+   font-size: 50px;
+}
+
+/*Aplicar estilo a párrafos de la clase contenido*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.contenido p{
+   font-size: 25px;
+   font-weight: 200;
+}
+
+/*Aplicar estilo a video de la clase tv*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad translate traslada un elemento de su actual posición*/
+   /*La propiedad z-index define un indice que determina la posición del elemento
+   en el eje z*/
+.tv video{
+   position:absolute;
+   transform: translate(-373px,68px);
+   width: 313px;
+   z-index: 1;
+}
+
+/*Disfruta*/
+
+/*Aplicar estilo a video de la clase disfruta*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad translate traslada un elemento de su actual posición*/
+   /*La propiedad z-index define un indice que determina la posición del elemento
+   en el eje z*/
+   .disfruta video{
+      position:absolute;
+      transform: translate(-347px,39px);
+      width: 263px;
+      z-index: 1;
+   }
+
+/*DESCARGAS*/
+/*Aplicar estilo a bloques tarjertaInterior y portada */
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.tarjetaInt, .portada{
+   display: flex;
+   align-items: center;
+   }
+
+/*Aplicar esilo a bloque tarjetaInterior*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*La posición relativa hace que se puedan modificar las propiedades del elemento*/
+   /*La propiedad z-index define un indice que determina la posición del elemento
+   en el eje z*/
+   .tarjetaInt {
+   width: 70%;
+   margin: auto;
+   border: solid 2px #434343;
+   padding: 10px;
+   border-radius: 6px;
+   position: relative;
+   z-index: 2;
+   background: #000000;
+   }
+
+/*Aplicar estilo a bloque tarjeta*/
+   /*La propiedad translate traslada un elemento de su actual posición*/
+   .tarjeta {
+   position: relative;
+   transform: translate(-65px, -41px);
+   }
+   
+/*PREGUNTAS*/
+
+/*Aplicar estilo a títulos de la clase preguntas*/
+.preguntas h2{
+   font-weight: bold;
+   font-size: 35px;
+}
+
+/*Aplicar estilo a clase contPreguntas*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.contPreguntas{
+   width: 650px;
+   margin: auto;
+   text-align: center;
+}
+
+/*Aplicar estilo a todos los bloques (div) de la clase contPreguntas*/
+.contPreguntas div{
+   text-align: left;
+   font-size: 20px;
+}
+
+/*Aplicar estilos a la clase pregunta*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.pregunta{
+   background:#303030;
+   padding: 10px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   cursor: pointer;
+}
+
+/*Aplicar estilo a la clase respuesta*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.respuesta{
+   background:#303030;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   }
+   
+/*Aplicar estilos a párrafos de las clases pregunta y respuesta*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.pregunta p,.respuesta p{
+   padding: 10px;
+   padding-left: 20px;
+}
+
+/*Aplicar estilo a división de linea de la clase respuesta*/
+.respuesta hr {
+   border: 1px solid #262626;
+}
+
+/*Aplicar estilo a respuesta al pasar por pregunta*/
+   /*Max-height se uso así para expandir el contenedor hasta su máxima altura
+   en caso de que exista*/
+.pregunta:hover .respuesta{
+   max-height: 1000px;
+}
+
+/*Aplicar estilo a la clase respuesta*/
+   /*La propiedad overflow se usa para evitar desbordamientos*/
+   /*Transition se usa para animar o crear un efecto en la imagen*/
+   /*Transition duration es el tiempo que durará la animación*/
+.respuesta{
+   max-height: 0px;
+   overflow: hidden;
+   transition: all .1s;
+}
+
+/*PREGUNTAS -> FORMULARIO2*/
+.form-content2 h2{
+   color:black;
+   font-size: 25px;
+   margin-bottom: 30px;
+   font-weight: bold;
+   align-items: center;
+}
+form{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+input,textarea{
+   padding: 17px 14px;
+   background-color: #ffffff;
+   border: 0;
+   font-size: 17px;
+   color: #424949;
+   margin-left: 15px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   height: 20px;
+   width: 73%;
+   font-weight: bold;
+   text-align: center;
+}
+::placeholder{
+   color:#AAB7B8;
+   font-weight: bold;
+}
+.form-content form{
+   display: flex;
+   flex-direction:row;
+   width: 800px;
+   align-items:left;
+}
+.btn{
+   padding: 17px 14px;
+   background-color: #e50914;
+   border: 0;
+   font-size: 17px;
+   color: #ffffff;
+   margin-left: 15px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+   height: auto;
+   width:150px;
+   cursor: pointer;
+   align-self: flex-end;
+   font-weight: bold;
+}
+.btn:hover{
+   background-color: #02faee;
+   color:#0c4a31;
+   font-weight: bold;
+}
+
+/*PIE DE PÁGINA*/
+
+/*Aplicar estilo a clase pieContenido*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.pieContenido{
+   width: 1100px;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+
+/*Aplicar estilo a los párrafos de la clase pie*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.pie p{
+   padding:7px;
+}
+
+/*Aplicar estilo a las clases pie y espacio*/
+.pie .espacio{
+   width: 100px;
+}
+
+/*Aplicar estilo a los bloques de las clases pie y pieContenido*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.pie .pieContenido div{
+   padding: 10px;
+}
